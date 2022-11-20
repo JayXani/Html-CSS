@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vídeos com HTML5</title>
+
+</head>
+
+    <body>
+
+        <h1>Inserindo videos que está guardados localmente</h1>
+        <p>Este video está hospedado no meu próprio servidor</p>
+
+        <video width="300" poster="imagens/4619786.jpg" controls loop>  <!--Poster é a tag para colocar a imagem no inicio do video, no caso a tumb-->
+
+                <source src="media/Bad mp4.m4v" type="video/mp4">
+                <source src="media/Bad webm.mkv" type="video/webm">
+
+                <p>Seu navegador não é compativel com os formatos de video, para ver o video,<a href="media/Bad mp4.m4v"></a> recomendamos que você faça o download :</p> <!--Esse paragrafo só irá aparecer caso o usuario não tenha o navegador compativel com os formatos de video-->
+
+        </video>  
+        
+                        <!--Para colocar videos basta colocar a tag video, width é a largura do video--> 
+                        <!--Controls também é o comando para o play em video-->
+                        <!--OGV não é compativel com o navegador safari, que é o navegador do iphone-->
+
+        <h1>Inserindo videos externos, youtube</h1>   
+        
+        <!--Videos externos não consumem muitos dados do meu servidor por isso é o mais indicado-->
+
+        <iframe src="https://www.youtube.com/embed/TUFB4HIUdJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    <!--O código a gente só copia e cola do youtube-->
+
+            <!--O vimeo também pode ser usado para videos externos, porem ele depende do cliente ter uma qualidade de internet boa e também uso caso o cliente queira que o video seja privado-->
+
+
+
+    </body>
+</html>

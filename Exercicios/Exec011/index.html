@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+
+        <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em varios dipositivos ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+            <picture>
+
+                    <source media="(max-width: 750px )" srcset="imagens/litlle.png" type="image/png">
+
+                    <source media="(max-width: 1050px )" srcset="imagens/media.png" type="image/png">   <!--Aqui se por acaso a imagem for muito grande e você ter que rolar para o lado para vê-la, esse comando dimiiniu a imagem automaticamente(TROCANDO A IMAGEM QUE ESTÁ LÁ DENTRO PARA SE ADAPTAR COM O TAMANHO DO APARELHO)-->
+
+
+                    <img src="imagens/Sem título.png" alt="Imagem flexiviel ">   <!-- Essa é a imagem base do meu site, os sources são SEMPRE acima um do outro-->
+
+            </picture>
+
+
+
+        <h1>Reproduzindo audios</h1>
+        <p>Aprendendo a reproduzir audios em HTML5</p>
+
+       <audio src="midia/10convert.com_Rod-Stewart-Baby-Jane-Official-Video_dxl2r6GuL2w.mp3" controls autoplay></audio>  <!--1º modo de colocar midia-->
+       <!--O comando control é para criar o play no site-->
+
+        <audio preload="metadata" loop > <!--Metadata ele carrega o nome do arquivo, algumas informações sobre ele, auto ele carrega o site todo primeiro, ou seja, é muito pesado, none só carrega quando o usuario clicar em play-->
+
+            <!--loop é literalmente o audio em looping->
+            
+                <source src="midia/10convert.com_Rod-Stewart-Baby-Jane-Official-Video_dxl2r6GuL2w.mp3" type="audio/mpeg"> <!--Tem que ser o source: src-->
+                <!--mpeg serve para arquivos MP3-->
+
+        </audio>
+
+        <p>Clique no link para baixar o audio. <a href="midia/10convert.com_Rod-Stewart-Baby-Jane-Official-Video_dxl2r6GuL2w.mp3"> link</a></p>
+</body>
+</html>

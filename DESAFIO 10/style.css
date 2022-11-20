@@ -1,0 +1,283 @@
+
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+
+}
+
+
+:root
+{
+    --cor0: #c5edb6;
+    --cor1: rgb(1, 161, 121);
+    --cor2: white;
+    --cor3: rgb(159, 209, 159);
+    --cor4: rgb(119, 204, 119);
+    --cor5: #315e21;
+    
+
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'idroid', Arial, helvetica, sans-serif;
+
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body
+{   
+    
+    background-color: var(--cor0);
+    margin: 0px;
+
+}
+header > h1
+{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    color:white;
+    text-shadow: 2px 2px 0px rgb(48, 48, 48);
+   
+    
+}
+header > p
+{
+
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color:white;
+    padding-bottom: 30px;
+    padding-top: 20px;
+   
+
+}
+header
+{
+    min-height: 150px;
+    padding-top: 20px;
+    background-image: linear-gradient(to top, rgb(0, 73, 0), rgb(147, 209, 147));
+    padding-bottom: 0px;
+}
+.Menvan
+{
+    margin: 0px;
+    color:black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.5em;
+    padding-right: 30px;
+
+}
+
+.navbar-expand-lg
+{
+    background-image: linear-gradient(to bottom, rgb(107, 187, 107),rgb(159, 211, 198));
+}
+.nav-link.active:hover
+{
+    background-color: aquamarine;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+.nav-link.dropdown-toggle:hover
+{
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+nav > a{
+
+    color:white;
+    padding: 4px 10px;
+    margin-left: 20px;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.459);
+    background-color:var(--cor5);
+    text-decoration: none;
+    border-radius: 2px;
+
+
+}
+
+nav > a:hover
+{
+    background-color: var(--cor1);
+
+    
+}
+main
+{
+    min-width: 300px; /* largura minima que meu site pode chegar, ou seja, ele se adapta sozinho*/
+    max-width: 1000px; /*Largura maxima que meu site pode chegar*/
+    background-color: var(--cor2);
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgb(43, 42, 42);
+    margin-bottom: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+}
+
+.section_links
+{
+
+    background-color:rgb(75, 231, 166);
+    color:black;
+    border-radius: 4px;
+    padding: 2px 6px;
+    text-decoration: none;
+    
+
+}
+.section_links:hover
+{
+
+    background-color: rgb(212, 248, 248);
+    text-decoration: underline;
+
+}
+.section_links::after               /*Para depois do link, ou seja, pseudoelemento*/
+{
+        content: '\00A0\🔗';              
+
+}
+main >h1
+{
+
+    text-align: center;
+    font-family: 'idroid',Arial, Helvetica, sans-serif;
+    color: rgba(3, 102, 3, 0.822);
+    padding: 20px 0px 10px 0px;
+    margin:0px;
+    
+}
+strong
+{
+
+    color: rgb(27, 53, 39);
+    border-radius: 2px;
+    padding: 2px 6px;
+
+}
+
+main img{
+
+    width: 100%;
+    padding: 20px auto;
+    border-radius: 4px;
+}
+.droids
+{
+
+    display: block;
+    margin:auto;
+    width: 100%;
+    
+}
+.pequeno
+{
+    display: block;  /* Por padrão as imagens não são em forma de bloco*/
+    margin: auto;
+    max-width: 350px;      /*Centralização da imagem*/
+
+}
+
+div.video
+{
+   
+    margin: 0px -20px 30px -20px;    /*Para deixar a margem colada na main, eu sei que é menos 20px pois meu padding é de 20px*/
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50%;
+}
+div.video > iframe
+{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.paragrafos
+{
+
+text-indent: 35px;  /* Espaçamento do paragrafo*/
+padding: 15px;
+line-height: 1.5em;
+font-size: 1.1em;  /*Tamanho da fonte*/
+
+}
+
+.h2css{
+
+    font-family: var(--fonte-destaque);
+    background-image: linear-gradient(to right,rgb(152, 211, 152), white);
+    padding: 5px;
+
+}
+
+
+aside
+{
+    background-color: var(--cor3);
+    border-radius: 10px;
+    margin: 20px 30px auto 30px;
+    padding: 10px;
+   
+   
+
+}
+aside > h3
+{
+
+    background-color: rgb(28, 136, 28);
+    border-radius: 10px 10px 0px 0px ;
+    margin: -10px -10px 0px -10px;
+    color: white;
+    padding: 5px;
+
+}
+
+.lista
+{
+    columns: 2; /* Arrumar o ajuste de tela*/ 
+    max-width: 100%;
+    list-style-position: inside;
+    padding: 15px;
+    list-style-type: '\✔️\00A0\00A0';  /*Não compativel com todo tipo de navegador*/
+    
+}
+
+abbr{
+
+    text-decoration: none;
+
+}
+footer
+{
+    min-width: 300px;   /* largura*/
+    max-width:  1000px;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--cor4);
+
+}
+footer > p
+{
+    font-weight: bolder;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    font-size: 0.9em;
+}
+

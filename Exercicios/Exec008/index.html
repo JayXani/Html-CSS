@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formatação de texto</title>
+
+    <!--A tag a baixo é um seletor, o que significa que quando coloco style no head e coloco a tag mark junto com background-color, isso sgnifica que todos os marks ficaram marcados com essa cor-->
+
+    <style>     
+        mark{
+
+
+            background-color: aqua;    
+
+    
+        }
+
+    </style>
+</head>
+
+
+<body>
+    
+        <h1>Principais formatções de textos</h1>
+        <h2>Negrito/destaque</h2>
+
+        <p>Nesta frase temos uma palavra em <strong>negrito</strong>        <!--Strong é uma tag com semantica, por isso usamos ela para negrito, ao invés da tag <b> que representa forma-->
+        </p>
+
+         <p>Nesta frase tem um <em>termo em italico</em> </p>  <!--Selecione o a palavra ou frase que você queira, Clicando em CTRL + shift + P e pesquisando abb, clique em "EMMENT WRAP WITH ABBREVIATION" e em seguida coloque a tag <em> e clique em enter-->
+
+        <h2>Texto marcado</h2>   <!--É tipo um marcador de texo-->
+
+        <p>Podemos fazer <mark>marcações com a tag MARK</mark>.</p>  <!--Para mudar a cor da marcação usando CSS, só precisamos colocar depois da palavra mark(sem ser a tag de fechamento), colocamos style e clicamos em background- color:-->
+
+        <p>Também é possivel aumentar e diminuir o tamanho do texto </p>        <!--Lembrando que somente será mostrado a tag small, porque a big está obsoleta-->
+        <p>Exemplo de <small>texto com a tag small</small>  </p>
+
+        <p>Também podemos mostrar quando um <del>texto foi excluido</del> com a tag del </p>
+        <p>Também podemos mostrar <ins>um texto que foi adicionado recentemente</ins>  usando a tag ins</p>
+
+        <p>É possivel também colocar textos sobreescritos, como por exemplo x elevado a 2, o 2 é em "cima" do x, portanto usando a tag sup ele ficará assim:  x<sup>20</sup>+3</p>
+
+        <p>Agora para colocarmos um texto sobreescrito como o H2O, que tem o 2 embaixo do H, usamos a tag sub, que ficará assim:  H<sub>2</sub>O</p>
+        
+</body>
+</html>

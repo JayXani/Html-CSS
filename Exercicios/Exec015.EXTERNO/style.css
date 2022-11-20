@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*Tudo que começa com @ é uma regra */
+
+/*Essa tecnica externa, eu posso mudar todas as configurações de estilo do meu site e mudar em todas as paginas de uma vez*/
+
+body 
+{
+        background-color: burlywood;
+        font-family: cursive;
+}
+h1
+{
+    color: blue;
+    
+}
+
+p
+{
+    text-align: justify;
+}

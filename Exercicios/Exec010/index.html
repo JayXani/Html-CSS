@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trabalhando com links</title>
+
+</head>
+
+    <body>
+            
+        <h1>Usando links externos</h1>
+        <p>Acessando a pagina do <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">geet hub do guanabara</a></p>       
+
+        <!--rel = external, significa que é um link do tipo externo, tagert = blank significa aba em branco, para abrir uma nova aba-->
+        
+        
+        <!--O "a" vem de ancora, ancora é a parte que é "clicavel do texo"-->  <!--herf significa referencia de hipertexto-->
+
+        <p>Usando links internos</p>  <!--Links internos são aqueles que você navega dentro do seu próprio site-->
+
+        <p>Esta é a primeira pagina do site, caso queira seguir para a segunda pagina <a href="pag02.html" rel="self">clique aqui</a> </p> <!--Lembrando que para links externos, as minhas paginas devem estar dentro da mesma pasta-->
+
+        <p>Você também pode acessar nossa pagina de noticias <a href="Noticias/pag003.html" rel="self">clicand aqui</a></p>  <!--Self significa acessar na própria pagina o meu site-->
+
+        
+         <!--Quando eu for acessar uma pagina dentro de uma pasta, eu devo mostrar qual o caminho que meu navegador vai fazer para acessar essa pagina-->
+    
+
+
+            <h1>Links para download</h1>
+
+                <ul>
+                    
+                    <li><a href="Livro/favicon_io.zip" download="favicon_io.zip" type="application/zip"> Link para download do favicon</a> </li>
+
+                    <!--Lembrando que vai de navegador para fazer download de arquivos pdf, o type application para download a gente descobre no site iana.org-->
+
+                </ul>
+    </body>
+
+
+</html>

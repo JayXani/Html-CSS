@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando hover</title>
+
+    <style>
+        div
+        {
+            font-weight: 100;
+            font-size: 1.5em;
+          
+        }
+       
+        div:hover
+        {
+            font-weight: 900;
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+        
+        }
+        div > p
+        {
+            display: none;
+        }
+        div:hover > p
+        {
+            display: block;             /* Quando eu passar o mouse sobre o paragrafo que está dentro da div o paragrafo vai aparecer*/
+            color:white;
+            background-color: rgb(173, 11, 11);
+            width: 200px;
+           
+           
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <h1>HOVER DE EXEMPLO ABAIXO</h1>
+
+    <div>
+        Passe o mouse e verá o texto
+        <p>Texto escondido</p>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+@charset "UTF-8";
+
+body
+{
+
+    background-image:linear-gradient(to right, aqua,lime);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1
+{
+    color: rgb(233, 95, 3);
+
+}
+h1#principal
+{
+    color:black;
+    text-align: center;
+}
+h2
+{
+    color: rgb(192, 22, 22);
+}
+
+.seidetudo
+{
+    color:rgb(226, 15, 86);
+    
+}
+.seidenada
+{
+    text-align: center;
+  
+}
+.teste
+{
+    text-align: center;
+    font: italic bold 1.5em times new roman;
+    
+    
+}
