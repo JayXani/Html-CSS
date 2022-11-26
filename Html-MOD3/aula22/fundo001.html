@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo personalizado</title>
+    <style>
+
+            body
+            {
+
+                background-image: url('imagens/wallpaper001.jpg');
+                
+
+            }
+            h1
+            {
+                color: rgb(255, 255, 255);
+              
+            }
+            div.quadrado
+            {
+
+                border: 1px solid black;  /*Shorthand, tamanho, tipo, cor */
+
+                width: 400px;
+                height: 400px;
+                display: inline-block; /*Para deixar uma do lado da outra*/
+                border-radius: 10px;
+                background-color: aquamarine;    
+            }
+
+            div#Q1
+            {
+
+                background-color: blueviolet;
+            }
+            div#Q2
+            {
+
+                background-image: linear-gradient(to right, black, purple);
+
+            }
+            div#Q3
+            {
+               background-image: url('imagens/pattern001.png');
+            }
+
+    </style>
+</head>
+<body>
+        <h1>Teste temporario</h1>
+
+            <div class="quadrado" id="Q1">
+
+            </div>
+
+            <div class="quadrado" id="Q2">
+
+            </div>
+
+            <div class="quadrado" id="Q3">
+            
+            </div>
+    
+</body>
+</html>
