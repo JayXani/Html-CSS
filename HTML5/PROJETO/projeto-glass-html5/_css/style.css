@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'computer';
+    src: url('_fonts/computer-font.ttf') format('trutype');
+}
