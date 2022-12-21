@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+:root
+{
+    --cor01:white;
+}
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+header
+{
+    background-color: black;
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+.header
+{
+    color: var(--cor01);
+    text-align:center;
+}
+.header > a
+{
+    color: var(--cor01);
+    text-decoration: none;
+}
+.header > a:hover
+{
+    color: rgb(76, 90, 114);
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 2px;
+}
+footer
+{
+    background-color: black;
+    color: var(--cor01);
+    font-size: 1.5em;
+    padding: 50px;
+
+}
