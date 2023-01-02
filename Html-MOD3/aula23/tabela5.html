@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+
+        table
+        {
+            width: 400px;
+            border-collapse:collapse;
+        }
+        caption
+        {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        th, td
+        {
+            border:1px solid black;
+            padding: 5px;
+        }
+        .Duo
+        {
+            background-color: aquamarine;
+        }
+        .One
+        {
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+
+        <colgroup>
+
+            <col class="Duo" span="2">
+            <col class="One">
+            <col>
+        
+        </colgroup>
+        <caption>Cadastro</caption>
+            <thead>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td>F</td>
+                    <td>30</td>
+                    <td>Programadora</td>
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td>M</td>
+                    <td>27</td>
+                    <td>Engenheiro</td>
+                </tr>
+                <tr>
+                    <td>Marcos</td>
+                    <td>M</td>
+                    <td>49</td>
+                    <td>Professor</td>
+
+                </tr>
+            </tbody>
+
+
+    </table>
+
+
+    
+</body>
+</html>

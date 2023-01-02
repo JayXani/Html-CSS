@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela (Dados reais)</title>
+
+        <style>
+            table
+            {
+                width: 500px;
+                border-collapse:collapse;
+            }
+            caption
+            {
+                font-size:1.3em;
+                font-weight: bold;
+                padding: 10px;
+            }
+            th
+            {
+                border: 1px solid black;
+                padding: 10px;
+               
+            }
+            td
+            {
+                border:1px solid black;
+                padding: 7px;
+            }
+     
+
+        </style>
+
+</head>
+<body>
+
+
+        <table>
+            <caption>Filmes favoritos</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th> <!--É col porquê está em uma coluna que tem "Homens" e "Mulheres"-->
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>  <!--É colgroup devido ao fato de ter mais de uma coluna com filmes, se fosse apenas 1 coluna seria col-->
+                </tr>
+
+            </thead>
+            
+                <tbody>
+                    <tr>
+                        <th rowspan="3" scope = "rowgroup">Mulheres</th>  <!--É um titulo por isso eu coloco th-->
+                            <td>Ana Maria Santos</td>
+                            <td>Alien</td>
+                            <td>Rambo</td>
+                            <td>Vingadores</td>
+
+                    </tr>
+                    <tr>
+                        <td>Beatriz Souza</td>
+                        <td>Hulk</td>
+                        <td>Inception</td>
+                        <td>Batman</td>
+                    </tr>
+                    <tr>
+                        <td>Cláudia Melo</td>
+                        <td>Oblivion</td>
+                        <td>Matrix</td>
+                        <td>Big Hero</td>
+
+                    </tr>
+                    <tr>
+                        <th rowspan="3" scope="rowgroup">Homens</th> <!--É rowgroup devido ao fato de ter mais de uma linha com nome dos homens e das mulheres-->
+                            <td>Bruno Mendonça</td>
+                            <td>Intocáveis</td>
+                            <td>Amnésia</td>
+                            <td>Gladiador</td>
+                    </tr>
+                    <tr>
+                        <td>Daniel Lourenço</td>
+                        <td>Wall-E</td>
+                        <td>Oldboy</td>
+                        <td>Dangal</td>
+
+                    </tr>
+                    <tr>
+                        <td>Fabiano Mota</td>
+                        <td>Star Wars 5</td>
+                        <td>Taxi Driver</td>
+                        <td>Toy Story</td>
+
+                    </tr>
+                
+                </tbody>
+
+
+
+
+        </table>
+
+</body>
+</html>
