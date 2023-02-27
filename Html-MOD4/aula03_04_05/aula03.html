@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,20 @@
     <title>Testando configurações com iframes</title>
 
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
         iframe{
             height: 400px;
             width: 400px;
+        }
+        .Error{
+            color: red;
+        }
+        iframe#tela{
+            width: 50vw;
+            height: 400px;
+            border: 1px solid black;
         }
 
     </style>
@@ -20,8 +31,20 @@
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex commodi dolor unde, corporis nam excepturi adipisci accusantium tempora rerum ea beatae nobis? Autem, similique a. Facilis vitae doloremque eveniet illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ratione, amet laboriosam nulla vero minima reiciendis, aperiam suscipit blanditiis rem dicta commodi? Doloremque obcaecati earum maiores similique totam exercitationem ipsa!
     </p>
 
-    <iframe src="aula03P2.html" frameborder="0"></iframe>
+        <ul>
+            <li><a href="PG_extras/aula03P2.html" target="frame1"> clique no link</a></li>
+        </ul>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque commodi mollitia quibusdam ipsum. Mollitia suscipit, totam iure in rem maxime! Nisi corrupti nulla esse ea quibusdam repudiandae, ad placeat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio sed voluptate asperiores officia sunt! Nihil, provident vel est voluptate facilis velit officia dolorum distinctio mollitia maiores qui quis sit!</p>
+
+    
+    <h2>A página do link irá aparecer abaixo</h2>
+
+        <iframe id = "tela" name = "frame1" srcdoc="<h1> Clique no link acima para abrir a página neste local</h1>">
+
+            <p class="Error">Infelizmente seu navegador não é compativel com iframes</p>
+
+        </iframe>
+
 </body>
 </html>
