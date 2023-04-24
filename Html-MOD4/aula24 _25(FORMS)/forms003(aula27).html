@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Teste com formularios parte 3</h1>
+    <form action="cadastro.php" method="post" autocomplete = "on">
+        <p> <label for="name">Nome: </label>
+            <input type="text" name="campo_nome" id="name" autocomplete = "username" placeholder = "Nome completo" required >
+        </p>
+        <p> <label for="media">Media do aluno</label>
+            <input type="number" name="campo_media" id = "media" min = "0" max = "10" step = "0.1" placeholder = "0 a 10" required>
+        </p>
+        <p> <label for="ano">Data prova</label>
+            <input type="month" name = "data_prova" id = "ano" min="2023-04" required>
+        </p>
+        <p>
+            <label for="data_da_prova" name = "complete_data" id="Dcomplete">Data completa</label>
+            <input type="date" name="data" id="data_da_prova" min="2023-04-24" required>
+        </p>
+        <p><label for="horario" name="hora" id="horario_marcado">
+            Hora da prova</label>
+            <input type="time" name="horario" id="horario_marcado" required>
+        </p>
+        <p><input type="submit" value="Enviar dados">
+        <input type="reset" value="Limpar valores"></p>
+
+    </form>
+</body>
+</html>
