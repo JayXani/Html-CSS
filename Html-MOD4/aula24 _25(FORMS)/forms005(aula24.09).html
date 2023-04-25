@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação dos formularios</title>
+</head>
+<body>
+    <form action="cadastro.php" method = "post" autocomplete = "off">
+        <fieldset>
+            <legend>Valores com a propriedade "Radio"</legend>
+                        
+            <input type="radio" name="sexo" id="id_sexM" value = "M"> 
+            <label for="id_sexM">Masculino</label><br>
+            <input type="radio" name="sexo" id="id_secF" value = "F">
+            <label for="id_secF">Feminino</label>
+
+        </fieldset><br>
+        
+        <fieldset>
+            <legend>Valore com a propriedade "Checkbox"</legend>
+
+            <input type="checkbox" name="esFutebol" id="id_fut">
+            <label for="id_fut">Futebol</label><br>
+            <input type="checkbox" name="esTenis" id="id_tenis">
+            <label for="id_tenis">Tenis</label><br>
+            <input type="checkbox" name="esBasquete" id="id_bas">
+            <label for="id_bas">Basquete</label>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar Dados">
+    </form>
+
+</body>
+</html>
