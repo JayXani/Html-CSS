@@ -17,8 +17,23 @@
                 <optgroup label="Estados do Brasil">
                     <option value="SP">São Paulo</option>
                 </optgroup>
-            </select>
-        </div>
+            
+            </select><br><br>
+
+            <label for="id_text_estado">Estados</label>
+            <input type="text" name = "Estado" id = "id_text_estado" list = lista>
+            <datalist id="lista">
+                <optgroup>
+                    <option value="Administração"></option>
+                </optgroup>
+            </datalist><br>
+            <label for="id_texto">Mensagem</label><br>
+            <textarea name="campo_text" id="id_texto" cols="30" rows="10"></textarea>
+
+            
+        </div><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
     </form>
 </body>
 </html>
