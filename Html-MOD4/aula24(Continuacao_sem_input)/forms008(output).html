@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output javascript</title>
+</head>
+<h1>Implementando javascript</h1>
+<body>
+    <form action="cadastro.php" autocomplete = "off" method="pos
+    ">
+    <p>
+        
+    <label for="id_number">Informe o 1 numero</label>
+    <input type="number" name="numeros" id="id_number" min = "0" required oninput="id_soma.innerHTML = Number(id_number.value) + Number(id_number2.value)">
+
+    </p>
+    <p>
+        <label for="id_number2">Informe o 2 numero</label>
+        <input type="number" name="2numero" id="id_number2" min="0" required oninput="id_soma.innerHTML = Number(id_number.value) + Number(id_number2.value)">
+    </p>
+    <p>
+        <label for="id_soma">Soma entre os valores</label>
+        <output id="id_soma" > 0</output>
+    </p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Apagar">
+
+
+    </form>
+</body>
+</html>
