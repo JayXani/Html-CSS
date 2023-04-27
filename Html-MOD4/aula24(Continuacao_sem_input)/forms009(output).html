@@ -8,12 +8,14 @@
 </head>
 <body>
     <h1>Teste com forms ainda</h1>
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="id_range">Informe os valores</label>
-            <input type="range" name="range" id="id_range">
+            <input type="range" name="range" id="id_range" min="0" max="10" required oninput = "id_valor.innerHTML = Number(id_range.value)">
+            <output id="id_valor">0</output>
         </p>
-
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
     </form>
     
 </body>
