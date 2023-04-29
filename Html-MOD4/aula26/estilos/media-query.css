@@ -4,22 +4,20 @@
     /*Configurações para tablets*/
 
     section#login{
-        width: 70vw;
-        height: 250px;
-        
+        width: 65vw;
+        height: auto;
     }
     div#imagem{
         float:left;
-        width: 50%;   
+        width: 50%;
     }
     div#formulario{
         float:right;
-        height: 100%;
     }
+
 }
 @media  screen and (min-width: 992px) {
     section#login{
         width:500px;
     }
-
 }
