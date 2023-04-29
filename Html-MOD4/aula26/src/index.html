@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <title>Project Login</title>
 </head>
 <body>
@@ -15,16 +17,20 @@
                 <h1>Login</h1>
                 <p>Bem vindo(a) novamente !</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <div>
-                        <label for="campo_usuario">Login </label>
-                        <input type="usuario" id = "campo_usuario" required placeholder="Login de usuario">
+                    <div class="campo_log">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="campo_usuario" placeholder="Informe seu email" required autocomplete="email" maxlength="30">
+                       
                     </div>
-                    <div>
-                        <label for="campo_senha">Senha </label>
-                        <input type="senha" id = "campo_senha" placeholder="Senha de login" required>
+                    <div class="campo_log">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="campo_senha" placeholder="Senha" required autocomplete="current-password" minlength="8" maxlength="20">
+                    
                     </div>
                     <input type="submit" value="Login">
-                    <input type="submit" value="Novo cadastro">
+                    <a href="#">
+                        Esqueceu a senha ? <span class = "material-icons">mail</span>
+                    </a>
                 </form>
             </div>
         </section>

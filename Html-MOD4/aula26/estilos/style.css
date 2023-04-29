@@ -26,6 +26,8 @@ section#login{
     transform: translate(-50%,-50%);
     color: rgb(245, 245, 245);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.699);
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
 }
 section#login > div#imagem{
     background: url('../pictures/logo_disney.png') no-repeat;
@@ -38,8 +40,10 @@ div#formulario{
   display: block;
   text-align: center;
   padding: 20px;
+ 
 }
-div h1,p{
+div > h1,p{
     padding: 10px;
 }
+
 
