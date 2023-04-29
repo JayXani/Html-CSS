@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medias Queries</title>
     <link rel="stylesheet" href="estilos/tyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para acessar os icones do google-->
 </head>
 <body>
     <header>
         <h1>Bem vindo ao menu responsivo</h1>
-        <menu>
+        <span id = "menu_burguer" class="material-icons" onclick="clickMenu()">menu</span> <!--Icone retirado do servidor do google-->
+        <menu id = "itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -43,9 +45,15 @@
         </article>
 
     </main>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none';
+            }else{
+                itens.style.display = 'block';
+            }
+        }
 
-    <footer>
-
-    </footer>
+    </script>
 </body>
 </html>
