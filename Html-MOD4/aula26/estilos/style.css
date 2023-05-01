@@ -17,7 +17,7 @@ body{
 section#login{
     background-color: rgba(62, 16, 148, 0.582);
     border-radius: 20px;
-    height: 500px;
+    height: 450px;
     width: 250px;
 
     position: absolute;
@@ -47,8 +47,9 @@ div > h1,p{
 }
 .campo_log{
     background-color: rgba(33, 21, 63, 0.733);
-    padding: 10px;
-    
+    padding: 5px;
+    border-radius:5px;
+    margin-bottom: 10px;
 }
 form > input[type = submit]{
     display: block;
@@ -67,9 +68,10 @@ form > input[type = submit]:hover{
     cursor: pointer;
 }
 #campo_usuario,#campo_senha{
-    padding: 2px;
+    padding: 3px;
     border-radius: 5px;
     border: none;
+
 }
 
 .bottom{
