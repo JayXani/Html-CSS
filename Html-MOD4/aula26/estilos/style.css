@@ -17,17 +17,17 @@ body{
 section#login{
     background-color: rgba(62, 16, 148, 0.582);
     border-radius: 20px;
-    height: 450px;
+    height: 500px;
     width: 250px;
 
     position: absolute;
     top: 50%;
     left:50%;
-    transform: translate(-50%,-50%);
     color: rgb(245, 245, 245);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.699);
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
+    transform: translate(-50%,-50%);
 }
 section#login > div#imagem{
     background: url('../pictures/logo_disney.png') no-repeat;
@@ -68,10 +68,18 @@ form > input[type = submit]:hover{
     cursor: pointer;
 }
 #campo_usuario,#campo_senha{
-    padding: 3px;
+    padding: 5px;
     border-radius: 5px;
     border: none;
-
+    transform: translate(0px,-2px);
+}
+.material-icons{
+    transform: translate(-5px, 4px);
+}
+input:focus-within{
+    background-color: rgba(36, 29, 48, 0.801);
+    color: white;
+    
 }
 
 .bottom{
